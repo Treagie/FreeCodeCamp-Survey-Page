@@ -1,0 +1,45 @@
+body {
+	background-image: url("http://www.tokkoro.com/picsup/1400949-doctor-who.jpg");
+	background-size: cover;
+}
+
+.survey {
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #000066;
+	text-align: center;
+	margin-top: 90px;
+	margin-left: 90px;
+	margin-right: 90px;
+	padding: 20px;
+	margin-bottom: 90px;
+}
+
+.survey #title {
+	font-size: 60px;
+	font-family: "righteous", cursive;
+	text-shadow: 1px 1px 2px #b30059;
+}
+
+.survey #description {
+	font-size: 20px;
+	font-family: "arvo", serif;
+	font-weight: 400;
+}
+
+table {
+	align-items: center;
+	font-family: "arvo", serif;
+}
+
+/*#name,
+#email,
+#number,
+#dropdown,
+#doctor,
+#fem,
+#checkboxes,
+#modern-doc,
+#commsbox {
+	float: right;
+}*/
+

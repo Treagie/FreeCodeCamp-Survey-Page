@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctor Who Survey</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Righteous" rel="stylesheet">
+
+</head>
+<body>
+	<div class=survey>
+		<h1 id="title">Doctor Who</h1>
+		<p id="description">The Survey: What Are Your Opinions?</p>
+
+		<!-- Questions -->
+		<table>
+			<form id="survey-form">
+				<tr>
+					<td><label id="name-label">Name* </label></td>
+					<td><input id="name" type="text" required placeholder="John Smith"></td>
+				</tr>
+
+				<tr>
+					<td><label id="email-label">E-mail* </label></td>
+					<td><input id="email" type="email" required placeholder="john@smith.com"></td>
+				</tr>
+
+				<tr>
+					<td><label id="number-label">Age* </label></td>
+					<td><input id="number" type="number" required placeholder="25" min="13" max="99"></td>
+				</tr>
+<!-- Main survey questions from here -->
+				<tr>
+					<td><label id="fan-time">How long have you been a fan of Doctor Who? </label></td>
+					<td>
+						<select id="dropdown" placeholder="Select" required>
+							<option value="" selected>Select</option>
+							<option value="02">0-2 years</option>
+							<option value="25">2-5 years</option>
+							<option value="510">5-10 years</option>
+							<option value="1020">10-20 years</option>
+							<option value="20+">20+ years</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label id="fav-doc">Who is your favourite Doctor? </label></td>
+					<td>
+						<input id="doctor" type="radio" name="doc">William Hartnell</>
+						<input id="doctor" type="radio" name="doc">Patrick Troughton</><br>
+						<input id="doctor" type="radio" name="doc">Jon Pertwee</>
+						<input id="doctor" type="radio" name="doc">Tom Baker</><br>
+						<input id="doctor" type="radio" name="doc">Peter Davison</>
+						<input id="doctor" type="radio" name="doc">Colin Baker</><br>
+						<input id="doctor" type="radio" name="doc">Sylvester McCoy</>
+						<input id="doctor" type="radio" name="doc">Paul McGann</><br>
+						<input id="doctor" type="radio" name="doc">Christopher Ecclestone</>
+						<input id="doctor" type="radio" name="doc">David Tennant</><br>
+						<input id="doctor" type="radio" name="doc">Matt Smith</>
+						<input id="doctor" type="radio" name="doc">John Hurt</><br>
+						<input id="doctor" type="radio" name="doc">Peter Capaldi</>
+						<input id="doctor" type="radio" name="doc">Jodie Whittaker</>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td><label id="fem-doc">What do you think about the next doctor being a woman? </label></td>
+					<td><input id="fem" type="text" placeholder="Your comments" rows=5 cols=30></input></td>
+				</tr>
+
+				<tr>
+					<td><label id="best-villain">Who do you consider to be the best villain? </label></td>
+					<td id="checkboxes">
+						<input type="checkbox" id="daleks" name="feature" value="daleks" />
+ 						<label for="daleks">Daleks</label>
+
+ 						<input type="checkbox" id="cybermen" name="feature" value="cybermen" />
+ 						<label for="cybermen">Cybermen</label><br>
+
+ 						<input type="checkbox" id="master" name="feature" value="master" />
+ 						<label for="master">The Master</label>
+
+ 						<input type="checkbox" id="Sontaran" name="feature" value="Sontaran" />
+ 						<label for="Sontaran">Sontarans</label><br>
+
+ 						<label for="other">Other (please state)</label>
+ 						<input type="text" id="other" name="feature" value="other"" />
+					</td>
+				</tr>
+
+				<tr>
+					<td><label id="modern">How do you think the modern series could be improved? </label></td>
+					<td><textarea id="modern-doc" type="text" placeholder="Your comments" rows=5 cols=30></textarea></td>
+				</tr>
+
+				<tr>
+					<td><label id="other-comms">Do you have any other comments?</label></td>
+					<td><textarea rows="10" cols="40" placeholder="Your comments"></textarea></td>
+			</form>
+		</table>
+		<a href="#"><input id="submit" type="submit" value="Submit Your Answers"/></a>
+		<!--<button id="submit">Submit Your Answers!</button>-->
+	</div>
+</body>
+</html>
