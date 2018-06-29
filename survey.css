@@ -4,13 +4,14 @@ body {
 }
 
 .survey {
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.8);
 	color: #000066;
 	text-align: center;
 	margin-top: 90px;
 	margin-left: 90px;
 	margin-right: 90px;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 40px;
 	margin-bottom: 90px;
 }
 
@@ -26,20 +27,34 @@ body {
 	font-weight: 400;
 }
 
-table {
-	align-items: center;
+.table {
+	margin-left: auto;
+	margin-right: auto;
 	font-family: "arvo", serif;
 }
 
-/*#name,
-#email,
-#number,
-#dropdown,
-#doctor,
+input,
+select,
+#doctor-names,
 #fem,
 #checkboxes,
 #modern-doc,
 #commsbox {
-	float: right;
-}*/
+	border: 2px solid black;
+}
 
+input,
+select {
+	padding: 15px;
+	border-radius: 12px;
+}  
+
+#fem,
+#modern-doc,
+#commsbox {
+	border-radius: 12px;
+}
+
+#submit {
+	font-family: "righteous", cursive;
+}
